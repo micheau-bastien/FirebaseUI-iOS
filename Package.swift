@@ -38,7 +38,7 @@ let package = Package(
   ],
   dependencies: [
     .package(name: "Firebase", url: "https://github.com/firebase/firebase-ios-sdk.git",
-             .revision("5bb6048ed72d0c195ce2b35d74c111e91f8fbd4b")),
+             from: "7.0.0"),
     .package(name: "SDWebImage", url: "https://github.com/SDWebImage/SDWebImage.git",
              from: "5.1.0"),
   ],
@@ -73,7 +73,6 @@ let package = Package(
     .target(
       name: "Storage",
       dependencies: [
-        .product(name: "FirebaseCore", package: "Firebase"),
         .product(name: "FirebaseStorage", package: "Firebase"),
         .product(name: "SDWebImage", package: "SDWebImage"),
       ],
