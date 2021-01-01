@@ -14,10 +14,16 @@
 //  limitations under the License.
 //
 
+#if SWIFT_PACKAGE
+@import GTMSessionFetcherCore;
+#else
+#import <GTMSessionFetcher/GTMSessionFetcher.h>
+#endif
+
+
 #import "FUIStorageImageLoader.h"
 #import "FIRStorageDownloadTask+SDWebImage.h"
 #import <FirebaseCore/FirebaseCore.h>
-#import <GTMSessionFetcher/GTMSessionFetcher.h>
 
 @interface NSURL ()
 
