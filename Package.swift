@@ -32,8 +32,8 @@ let package = Package(
       targets: ["EmailUI"]
     ),
     .library(
-      name: "Storage",
-      targets: ["Storage"]
+      name: "FirebaseUIStorage",
+      targets: ["FirebaseUIStorage"]
     ),
   ],
   dependencies: [
@@ -71,7 +71,7 @@ let package = Package(
       ]
     ),
     .target(
-      name: "Storage",
+      name: "FirebaseUIStorage",
       dependencies: [
         .product(name: "FirebaseStorage", package: "Firebase"),
         .product(name: "SDWebImage", package: "SDWebImage"),
